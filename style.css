@@ -1,0 +1,299 @@
+/* Style général */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA; /* Couleur de fond très claire */
+    color: #333; /* Couleur du texte sombre */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-bar {
+    display: flex;
+    align-items: center;
+    background-color: #2C3E50; /* Couleur de l'en-tête - bleu foncé */
+    color: #ECF0F1; /* Couleur du texte dans l'en-tête - gris clair */
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.point-vert {
+    width: 24px; /* Taille du point vert */
+    height: 24px; /* Taille du point vert */
+    background-color: #27AE60; /* Vert pour le point */
+    border-radius: 50%; /* Forme ronde */
+    margin-right: 10px;
+}
+
+.nom {
+    font-size: 1.8em; /* Taille de police pour le nom */
+    margin-right: 10px;
+}
+
+.titre {
+    font-size: 1.2em;
+    color: #F39C12; /* Couleur du titre - orange */
+    margin-left: 8px;
+}
+
+/* Section principale */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+    border-radius: 12px;
+    background-color: #FFFFFF; /* Fond blanc pour la section principale */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    align-items: center;
+}
+
+/* Colonne gauche pour le PDF */
+.colonne-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-viewer {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 350px; /* Hauteur du visualiseur PDF */
+    border: 4px solid #27AE60; /* Bordure verte pour le visualiseur PDF */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour le PDF */
+}
+
+/* Colonne droite pour le texte */
+.colonne-info {
+    flex: 1;
+}
+
+.salut {
+    font-family: 'Dancing Script', cursive; /* Police pour "Salut" */
+    font-size: 7.7em; /* Taille de la police pour "Salut" */
+    color: #E74C3C; /* Couleur rouge vif */
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 2.6em; /* Taille de la police pour le nom */
+    font-weight: bold;
+    color: #2C3E50; /* Couleur du nom - bleu foncé */
+}
+
+h3 {
+    font-size: 1.5em; /* Taille de la police pour le sous-titre */
+    color: #27AE60; /* Couleur du sous-titre - vert */
+    margin-top: 8px;
+}
+
+.a-propos {
+    margin: 20px 0 30px;
+    font-size: 1.1em;
+    color: #555; /* Couleur grise */
+}
+
+/* Bouton de téléchargement du CV */
+.button-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27AE60; /* Couleur verte */
+    color: #FFFFFF; /* Texte blanc */
+    padding: 15px 30px; /* Espacement autour du texte */
+    border-radius: 8px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s; /* Transition pour l'effet au survol */
+    font-size: 1.2em; /* Taille de la police */
+}
+
+.button-download:hover {
+    background-color: #1E7E50; /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Couleur de fond du footer - bleu foncé */
+    color: #ECF0F1; /* Couleur du texte dans le footer - gris clair */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px; /* Marge en haut pour espacer le footer du contenu */
+    border-top: 3px solid #E67E22; /* Bordure orange en haut du footer */
+}
+
+/* Contact row */
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+}
+
+.contact-row p,
+.contact-row a {
+    display: flex;
+    align-items: center;
+    color: #ECF0F1; /* Texte clair */
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact-row i {
+    margin-right: 8px;
+    color: #E67E22; /* Couleur des icônes */
+}
+
+.contact-row a {
+    color: #E67E22; /* Couleur des liens */
+}
+
+.contact-row a:hover {
+    color: #D86A15; /* Couleur des liens au survol */
+}
+
+/* Icônes de réseaux sociaux */
+.social-media a {
+    color: #E67E22; /* Couleur des icônes */
+    margin: 0 10px;
+    font-size: 1.5em; /* Taille des icônes */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #D86A15; /* Couleur des icônes au survol */
+}
+
+/* Styles Responsives */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Réduit le padding sur les petits écrans */
+    }
+
+    h1 {
+        font-size: 2em; /* Ajuste la taille de l'en-tête sur petits écrans */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ajuste la taille de sous-titres */
+    }
+
+    .salut {
+        font-size: 5em; /* Ajuste la taille de "Salut" sur petits écrans */
+    }
+
+    .pdf-viewer {
+        height: 250px; /* Réduit la hauteur du PDF sur petits écrans */
+    }
+
+    /* Styles spécifiques pour le slider sur petits écrans */
+    .slider {
+        width: 100%; /* Définit la largeur du slider à 100% sur les petits écrans */
+        flex-direction: column; /* Change la direction pour une colonne */
+    }
+
+    .nav-button {
+        width: 40px; /* Réduit la largeur des boutons */
+        height: 40px; /* Réduit la hauteur des boutons */
+    }
+}
+
+/* Styles pour le slider */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments */
+    position: relative;
+    width: 170%; /* Définit la largeur du slider à 170% */
+    margin: 0 auto; /* Centre le slider dans son conteneur */
+    overflow: hidden; /* Cache le débordement */
+    border-radius: 12px; /* Arrondir les coins du slider */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Ombre autour du slider */
+}
+
+/* Style pour le visualiseur PDF */
+.pdf-viewer {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 500px; /* Ajustez la hauteur selon les besoins */
+    border: none; /* Enlève la bordure */
+    transition: opacity 0.5s ease-in-out; /* Transition douce pour l'opacité */
+}
+
+/* Animation pour un changement de PDF */
+.pdf-viewer.fade-out {
+    opacity: 0; /* Rend le PDF transparent */
+}
+
+/* Styles pour les boutons de navigation */
+.nav-button {
+    background-color: #27AE60; /* Couleur verte */
+    color: #FFFFFF; /* Texte blanc */
+    border: none;
+    width: 50px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    border-radius: 50%; /* Rendre les boutons circulaires */
+    display: flex;
+    align-items: center; /* Centre le contenu */
+    justify-content: center; /* Centre le contenu */
+    cursor: pointer; /* Pointeur sur survol */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Ajout de transition */
+    position: absolute; /* Position absolue pour le placement */
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste pour centrer complètement */
+}
+
+.nav-button:hover {
+    background-color: #1E7E50; /* Couleur au survol */
+    transform: scale(1.1); /* Légèrement agrandi au survol */
+}
+
+.nav-button.left {
+    left: 10px; /* Position à gauche */
+}
+
+.nav-button.right {
+    right: 10px; /* Position à droite */
+}
+/* Styles pour les icônes de compétences */
+.competence-icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.competence-icones img {
+    width: 60px; /* Largeur de chaque icône */
+    height: 60px; /* Hauteur de chaque icône */
+    border-radius: 50%; /* Rendre les icônes circulaires */
+    border: 2px solid #2C3E50; /* Bordure autour de chaque icône */
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+.competence-icones img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Ombre au survol */
+}

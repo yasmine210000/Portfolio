@@ -1,0 +1,329 @@
+/* Style général */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA; /* Couleur de fond très claire */
+    color: #333; /* Couleur du texte sombre */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50; /* Couleur de l'en-tête - bleu foncé */
+    color: #ECF0F1; /* Couleur du texte dans l'en-tête - gris clair */
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.point-vert {
+    width: 24px; /* Agrandi le point vert */
+    height: 24px; /* Agrandi le point vert */
+    background-color: #27AE60; /* Vert pour le point */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nom {
+    font-size: 1.8em; /* Taille de police augmentée pour le nom */
+    margin-right: 10px;
+}
+
+.titre {
+    font-size: 1.2em;
+    color: #F39C12; /* Couleur du titre - orange */
+    margin-left: 8px;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header-right a {
+    color: #ECF0F1; /* Couleur des liens - gris clair */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.header-right a:hover {
+    background-color: #2980B9; /* Couleur de fond au survol - bleu plus clair */
+}
+
+/* Section principale */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligne les éléments au début */
+    padding: 80px 20px;
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+    border-radius: 12px;
+    background-color: #FFFFFF; /* Fond blanc pour la section principale */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    align-items: center;
+}
+
+/* Colonne gauche pour la photo */
+.colonne-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-ronde {
+    border-radius: 50%;
+    width: 350px; /* Augmenté pour le cercle de la photo */
+    height: 350px; /* Augmenté pour le cercle de la photo */
+    border: 8px solid #27AE60; /* Bordure verte pour la photo */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-ronde:hover {
+    transform: scale(1.08); /* Effet d'agrandissement */
+}
+
+/* Colonne droite pour le texte */
+.colonne-info {
+    flex: 1;
+}
+
+.salut {
+    font-family: 'Dancing Script', cursive; /* Police pour "Salut" */
+    font-size: 7.7em; /* Ajusté la taille de la police à 7.7em (1.7 fois la taille de base) */
+    color: #E74C3C; /* Couleur rouge vif */
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 2.6em; /* Ajusté la taille de la police */
+    font-weight: bold;
+    color: #2C3E50; /* Couleur du nom - bleu foncé */
+}
+
+h3 {
+    font-size: 1.5em; /* Ajusté la taille de la police */
+    color: #27AE60; /* Couleur du sous-titre - vert */
+    margin-top: 8px;
+}
+
+.a-propos {
+    margin: 20px 0 30px;
+    font-size: 1.1em;
+    color: #555; /* Couleur grise */
+}
+
+/* Boutons ronds */
+.boutons-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.round-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF; /* Texte blanc */
+    padding: 15px; /* Réduit la taille des boutons */
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px; /* Réduit la largeur des boutons */
+    height: 100px; /* Réduit la hauteur des boutons */
+    font-size: 1.2em; /* Ajusté la taille de la police */
+    margin: 12px;
+    transition: transform 0.1s ease; /* Ajout d'une transition pour l'effet d'agrandissement au survol */
+}
+
+/* Couleurs spécifiques pour chaque bouton */
+.green {
+    background-color: #27AE60; /* Vert */
+}
+
+.orange {
+    background-color: #E67E22; /* Orange */
+}
+
+.pink {
+    background-color: #E91E63; /* Rose */
+}
+
+/* Effet de clic pour les boutons */
+.round-button:active {
+    transform: scale(0.95); /* Réduit légèrement la taille lors de l'appui */
+}
+
+/* Effet de survol pour les boutons */
+.round-button:hover {
+    transform: scale(1.1); /* Agrandit le bouton au survol */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
+
+/* Optionnel: changer la couleur de fond au survol pour chaque bouton */
+.round-button.green:hover {
+    background-color: #1E7E50; /* Vert plus foncé */
+}
+
+.round-button.orange:hover {
+    background-color: #D86A15; /* Orange plus foncé */
+}
+
+.round-button.pink:hover {
+    background-color: #D81B60; /* Rose plus foncé */
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Couleur de fond du footer - bleu foncé */
+    color: #ECF0F1; /* Couleur du texte dans le footer - gris clair */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px; /* Marge en haut pour espacer le footer du contenu */
+    border-top: 3px solid #E67E22; /* Bordure orange en haut du footer */
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+}
+
+.contact-row p,
+.contact-row a {
+    display: flex;
+    align-items: center;
+    color: #ECF0F1; /* Texte clair */
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact-row i {
+    margin-right: 8px;
+    color: #E67E22; /* Couleur des icônes */
+}
+
+.contact-row a {
+    color: #E67E22; /* Couleur des liens */
+}
+
+.contact-row a:hover {
+    color: #D86A15; /* Couleur des liens au survol */
+}
+
+/* Icônes de réseaux sociaux */
+.social-media a {
+    color: #E67E22; /* Couleur des icônes */
+    margin: 0 10px;
+    font-size: 1.5em; /* Taille des icônes */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #D86A15; /* Couleur des icônes au survol */
+}
+
+/* Styles spécifiques pour la page CV */
+.cv-container {
+    padding: 40px;
+}
+
+.cv-container h2,
+.cv-container h3 {
+    margin-top: 20px;
+    color: #2C3E50;
+}
+
+.cv-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.cv-container p {
+    margin: 10px 0;
+}
+
+/* Styles spécifiques pour la page Projets */
+.projects-container {
+    padding: 40px;
+}
+
+.projects-container h2 {
+    margin-top: 20px;
+    color: #2C3E50;
+}
+
+.projects-container iframe {
+    border: none;
+    margin-top: 10px;
+}
+
+/* Styles spécifiques pour la page Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto; /* Centrer le formulaire */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #27AE60; /* Bordure verte au focus */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #27AE60; /* Vert */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1E7E50; /* Vert plus foncé au survol */
+}

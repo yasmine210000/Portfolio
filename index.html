@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-bar">
+        <div class="header-left">
+            <div class="point-vert"></div>
+            <span class="nom">Yasmin Ali</span>
+            <span class="titre">Projeteuse CFO / CFA</span>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <div class="content">
+            <!-- Section PDF -->
+            <div class="colonne-photo">
+                <div class="slider">
+                    <button class="nav-button left" id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <iframe src="documents/pdfs.pdf#page=1" class="pdf-viewer" frameborder="0" id="pdfViewer"></iframe>
+                    <button class="nav-button right" id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Informations sur le portfolio -->
+            <div class="colonne-info">
+                <div class="salut">Bonjour</div>
+                <h2>Yasmin Ali</h2>
+                <h3>Projeteuse Bureau d'études en électricité </h3>
+                <p class="a-propos">Bienvenue sur mon portfolio. Découvrez mon parcours et mes projets.</p>
+
+                <!-- Icônes de compétences logiciels -->
+                <div class="competence-icones">
+                    <img src="images/caneco bt.jpeg" alt="Caneco BT">
+                    <img src="images/revit.jpeg" alt="Revit">
+                    <img src="images/autocad.jpeg" alt="AutoCAD">
+                    <img src="images/dialux.jpeg" alt="Dialux">
+                    <img src="images/powerpoint.jpeg" alt="powerpoint">
+                    <img src="images/word.jpeg" alt="Word">
+                    <img src="images/excel.jpeg" alt="Excel">
+                  
+                    
+                </div>
+
+                <!-- Bouton de téléchargement du CV -->
+                <div class="boutons-navigation">
+                    <a href="documents/mon_cv.pdf" download="CV_Yasmin_Ali" class="button-download">
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-row">
+            <p><i class="fas fa-phone-alt"></i> +33 7 67 01 80 31</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:engyasmine21@gmail.com">engyasmine21@gmail.com</a></p>
+            <p>Suivez-moi :</p>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/yasmin-ali-828b70209/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
