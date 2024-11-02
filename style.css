@@ -299,29 +299,48 @@ footer {
 }
 /* Styles Responsives */
 @media (max-width: 600px) {
-    /* Ajuster les espacements et les tailles */
     .container {
-        padding: 20px 10px;
-        flex-direction: column;
+        padding: 10px; /* Réduit le padding sur les petits écrans */
     }
 
     .content {
-        flex-direction: column;
         padding: 20px;
         gap: 20px;
     }
 
+    h1 {
+        font-size: 2em; /* Ajuste la taille de l'en-tête sur petits écrans */
+    }
+
     h2 {
-        font-size: 1.8em; /* Taille de police réduite */
+        font-size: 1.5em; /* Ajuste la taille de sous-titres */
     }
 
     .salut {
-        font-size: 4em; /* Ajuster "Salut" */
-        text-align: center;
+        font-size: 5em; /* Ajuste la taille de "Salut" sur petits écrans */
     }
 
     .pdf-viewer {
-        height: 200px; /* Hauteur plus petite du PDF sur mobile */
+        height: 100vh; /* Prendre toute la hauteur de l'écran sur mobile */
+    }
+
+    .colonne-info {
+        flex: 1; /* Assure que la colonne info prend la largeur disponible */
+        padding: 10px; /* Ajoute du padding pour un meilleur espacement */
+    }
+
+    /* Ajuster les styles de contact pour les petits écrans */
+    .contact-row {
+        flex-direction: column; /* Organise en colonne pour les petits écrans */
+        gap: 10px; /* Ajoute de l'espace entre les éléments */
+    }
+
+    .contact-row p {
+        font-size: 1em; /* Réduit la taille de police pour le texte de contact */
+    }
+
+    .contact-row a {
+        font-size: 1em; /* Réduit la taille de police pour les liens de contact */
     }
 
     /* Réduire la taille des boutons de navigation */
@@ -341,14 +360,4 @@ footer {
         width: 50px; /* Réduire la taille des icônes */
         height: 50px;
     }
-
-    /* Ajuster les éléments du footer */
-    .contact-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-.pdf-viewer.fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
 }
