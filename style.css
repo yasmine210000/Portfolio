@@ -299,65 +299,66 @@ footer {
 }
 /* Styles Responsives */
 @media (max-width: 600px) {
-    .container {
-        padding: 10px; /* Réduit le padding sur les petits écrans */
-    }
-
     .content {
-        padding: 20px;
-        gap: 20px;
+        flex-direction: column; /* Change direction to column on small screens */
+        gap: 20px; /* Space between elements */
     }
 
-    h1 {
-        font-size: 2em; /* Ajuste la taille de l'en-tête sur petits écrans */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Ajuste la taille de sous-titres */
-    }
-
-    .salut {
-        font-size: 5em; /* Ajuste la taille de "Salut" sur petits écrans */
-    }
-
-    .pdf-viewer {
-        height: 100vh; /* Prendre toute la hauteur de l'écran sur mobile */
+    .colonne-photo {
+        order: 1; /* Ensure PDF viewer is first */
+        width: 100%; /* Take full width */
     }
 
     .colonne-info {
-        flex: 1; /* Assure que la colonne info prend la largeur disponible */
-        padding: 10px; /* Ajoute du padding pour un meilleur espacement */
+        order: 2; /* Ensure info column is second */
+        width: 100%; /* Take full width */
+        padding: 10px; /* Optional: Add some padding */
     }
 
-    /* Ajuster les styles de contact pour les petits écrans */
+    .pdf-viewer {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust header size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust subtitle size */
+    }
+
+    .salut {
+        font-size: 5em; /* Adjust "Salut" size */
+    }
+
+    /* Adjust the contact information */
     .contact-row {
-        flex-direction: column; /* Organise en colonne pour les petits écrans */
-        gap: 10px; /* Ajoute de l'espace entre les éléments */
+        flex-direction: column; /* Arrange contact information vertically */
+        gap: 10px; /* Space between items */
     }
 
-    .contact-row p {
-        font-size: 1em; /* Réduit la taille de police pour le texte de contact */
-    }
-
+    .contact-row p,
     .contact-row a {
-        font-size: 1em; /* Réduit la taille de police pour les liens de contact */
+        font-size: 1em; /* Adjust font size */
     }
 
-    /* Réduire la taille des boutons de navigation */
     .nav-button {
-        width: 35px;
-        height: 35px;
+        width: 35px; /* Reduce button size */
+        height: 35px; /* Reduce button size */
     }
 
-    /* Afficher les icônes de compétences en grille */
     .competence-icones {
-        gap: 10px;
-        justify-content: center;
-        flex-wrap: wrap;
+        gap: 10px; /* Space between icons */
+        justify-content: center; /* Center the icons */
+        flex-wrap: wrap; /* Allow wrapping */
     }
 
     .competence-icones img {
-        width: 50px; /* Réduire la taille des icônes */
-        height: 50px;
+        width: 50px; /* Reduce icon size */
+        height: 50px; /* Reduce icon size */
     }
 }
