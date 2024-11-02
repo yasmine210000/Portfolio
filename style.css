@@ -348,3 +348,7 @@ footer {
         gap: 15px;
     }
 }
+.pdf-viewer.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}

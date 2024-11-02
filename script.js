@@ -37,3 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updatePDF(); // Charge le premier PDF au démarrage
 });
+function updatePDF() {
+    pdfViewer.src = `${pdfFiles[currentIndex]}#page=1`;
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex === pdfFiles.length - 1;
+}
