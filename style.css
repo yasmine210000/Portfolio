@@ -297,3 +297,54 @@ footer {
     transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Ombre au survol */
 }
+/* Styles Responsives */
+@media (max-width: 600px) {
+    /* Ajuster les espacements et les tailles */
+    .container {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em; /* Taille de police réduite */
+    }
+
+    .salut {
+        font-size: 4em; /* Ajuster "Salut" */
+        text-align: center;
+    }
+
+    .pdf-viewer {
+        height: 200px; /* Hauteur plus petite du PDF sur mobile */
+    }
+
+    /* Réduire la taille des boutons de navigation */
+    .nav-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Afficher les icônes de compétences en grille */
+    .competence-icones {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .competence-icones img {
+        width: 50px; /* Réduire la taille des icônes */
+        height: 50px;
+    }
+
+    /* Ajuster les éléments du footer */
+    .contact-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
